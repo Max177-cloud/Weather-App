@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./weather.css">
 </head>
 <body>
+    <div class="container">
+        <div class="weather_header">
+            <form class="weather_search">
+                <input class="weather_search_form" type="text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="units">
+                <span class="celsium">&#176C</span>
+                <span class="farengii">&#176F</span>
+            </div>
+        </div>
+        <div class="weather_body">
+            <h1 class="weather_city">Kyiv</h1>
+            <div class="weather_daytime"></div>
+            <div class="forecast"></div>
+            <div class="icon"></div>
+            <div class="temperature"></div>
+            <div class="weather_minmax">
+                <p>Min: 12&#176</p>
+                <p>Max: 16&#176</p>
+            </div>
+        </div>
+        <div class="weather_info">
+            <div class="weather_card">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p class="real_feel">Real Feel</p>
+                    <p class="weather__realfeel">18&#176</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p class="humidity">Humidity</p>
+                    <p class="weather__realfeel">18&#176</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p class="wind">Wind</p>
+                    <p class="weather__realfeel">18&#176</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p class="pressure">Pressure</p>
+                    <p class="weather__realfeel">18&#176</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 </html>

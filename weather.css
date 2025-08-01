@@ -1,0 +1,33 @@
+.container{
+    background-color: black;
+    color: #fff;
+    padding: 32px;
+    width: 40%;
+    margin: 6rem auto;
+    border-radius: 10px;
+}
+.weather_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather_search_form{
+    border: none;
+    background: #1e1e1e;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+}
+.weather_search{
+    position: relative;
+}
+.weather_search i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+}
+.units span{
+    cursor: pointer;
+}
