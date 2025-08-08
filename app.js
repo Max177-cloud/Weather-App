@@ -30,8 +30,27 @@ async function getDataWeather(){
         weatherCity.innerHTML=`${data.name}`
         temperature.innerHTML=`${data.main.temp.toFixed()}&#176;`
         weatherMinMax.innerHTML=`<p>Min:${data.main.temp_min.toFixed()}&#176;</p><p>Max:${data.main.temp_max.toFixed()}&#176;</p>`
+        realFeel.innerHTML=`<p>${data.main.feels_like.toFixed()}&#176; </p>`
+        wind.innerHTML=`${data.wind.speed}`
+        humidity.innerHTML=`${data.main.humidity}%`
+        pressure.innerHTML=`${data.main.pressure}Pa`
     } catch (error) {
         
     }
 }
 getDataWeather()
+const days=document.querySelector(`.days`)
+const night=document.querySelector(`.night`)
+const container=document.querySelector(`.container`)
+function nightTheme(){
+    container.classList.remove(`days_theme`)
+    document.querySelector(`.weather_search_form`).classList.remove(`input_theme`)
+    container.classList.add(`night_theme`)
+}
+function daysTheme(){
+    container.classList.remove(`night_theme`)
+    container.classList.add(`days_theme`)
+    document.querySelector(`.weather_search_form`).classList.add(`input_theme`)
+}
+days.addEventListener(`click`,daysTheme)
+night.addEventListener(`click`,nightTheme)
